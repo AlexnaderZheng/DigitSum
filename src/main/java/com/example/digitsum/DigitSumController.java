@@ -17,4 +17,9 @@ public class DigitSumController {
     public int digitSum(int number){
         return digitSumCalculator.calculateDigitSum(number);
     }
+
+    @RequestMapping("/usageCount")
+    public int usageCount() {
+        return digitSumCalculator.getUsageCount();
+    }
 }

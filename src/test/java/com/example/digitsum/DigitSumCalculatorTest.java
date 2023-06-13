@@ -17,5 +17,6 @@ public class DigitSumCalculatorTest {
             double expect2 = 6;
             double res2 = calculator.calculateDigitSum(tc2);
             assertEquals(expect2, res2);
+            assertEquals(2, calculator.getUsageCount());
         }
 }
